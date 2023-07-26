@@ -17,13 +17,16 @@ or FITNESS FOR A PARTICULAR PURPOSE.
 See the GNU General Public License for more details in the file gpl.txt.
 
 ## Build Instructions
+
 1. Download cross platform make from http://www.cmake.org
 2. Download freeimage from https://sourceforge.net/projects/freeimage
 3. Edit CMakeLists.txt to tell it where to find your free image build
-4. Type mkdir build; cd build
-5. Type cmake ..
-6. Type make .
-7. To build clean, rm -Rf build and start again
+4. Type `mkdir build; cd build`
+5. Type `cmake ..`
+6. Type `make .` (or on Windows systems cmake makes a Visual Studio Project file)
+7. To build clean, `rm -Rf build` and start again
+
+Note: to specify the install directory, use `make install DESTDIR="/home/me/mydist"`
 
 ## Usage
 
